@@ -39,8 +39,8 @@ AppAsset::register($this);
         // ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'Акції', 'url' => ['/promotion/index']],
         ['label' => 'Категорії', 'url' => ['/category/index']],
-        ['label' => 'Підкатегорії', 'url' => ['/sub-categoty/index']],
-        ['label' => 'Товари', 'url' => ['/products/index']],
+        ['label' => 'Підкатегорії', 'url' => ['/sub-category/index']],
+        ['label' => 'Товари', 'url' => ['/product/index']],
         ['label' => 'Закази', 'url' => ['/order/index']],
         ['label' => 'Пероснал', 'url' => ['/user/index']],
     ];

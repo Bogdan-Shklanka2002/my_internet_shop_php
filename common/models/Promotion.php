@@ -9,6 +9,8 @@ use yii\db\ActiveRecord;
  * @property string $name
  * @property string $description
  * @property string $url_image
+ * @property string $date_start
+ * @property string $date_end
  */
 
  class Promotion extends ActiveRecord

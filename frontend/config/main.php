@@ -36,14 +36,17 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '/' => 'shop/index',
+                '<controller>/<id::\d+>/action' => '<contoller>/<action>',
+                // 'shop/<category_id:\d+>/category/<sub_category_id:\d+>' => 'shop/category',
+                // 'promotion/create' => 'promotion/create',
+                // 'promotion/index' => 'promotion/index',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];

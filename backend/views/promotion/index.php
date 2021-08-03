@@ -30,6 +30,8 @@ use yii\helpers\Url;
                 ['class' => 'yii\grid\SerialColumn'],
                 'name',
                 'description',
+                'date_start',
+                'date_end',
                 ['class' => 'yii\grid\ActionColumn', 'template' =>'{view} {update} {delete}',
                     'options' => [
                         'style' => 'width: 20%',
@@ -43,7 +45,7 @@ use yii\helpers\Url;
                             );
                         },
                         'update' => function($url, $model, $key){
-                            return Html::a('Редагувати', Url::toRoute('promotion/view'), ['class' => 'btn btn-success'], ['update', 'id' => $model->id], );
+                            return Html::a('Редагувати', ['update', 'id' => $model->id],['class' => 'btn btn-success'] );
                         },
                         'delete' => function($url, $model, $key){
                             return Html::a('Видалити' , ['delete', 'id' => $model->id], ['class' => 'btn btn-danger']);

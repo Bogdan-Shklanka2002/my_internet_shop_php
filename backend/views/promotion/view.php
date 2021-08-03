@@ -14,8 +14,7 @@ use yii\helpers\Url;
     </div>
     <div class="col-md-8">
         <h3>Фотографія акції</h3>
-        <?=$model->url_image?>
-        <img src='../../../uploads/b001b9a88c38cd49e34e7d8323a02f31.jpg' alt="" style='width: 100%;height: 500px;'>
+        <img src="<?='../' . $model->url_image?>" alt="" style='width: 100%;height: 500px;'>
     </div>
     <div class="col-md-4">
         <h3>Опис</h3>
