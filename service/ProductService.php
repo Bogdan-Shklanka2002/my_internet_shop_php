@@ -11,8 +11,6 @@ class ProductService
         if($model->id){
             $product = Product::findOne(['id' => $model->id]);
             $images = json_encode($product->url_images);
-            echo $images; 
-            die();
             // foreach ($images as $image){
 
             // }
@@ -31,9 +29,9 @@ class ProductService
         $product->category_id = $model->category_id;
         $product->sub_category_id = $model->sub_category_id;
         $product->url_images = json_encode($images_path);
-        var_dump($images_path);
-        echo $product->url_images; 
-        die();
+        // var_dump($images_path);
+        // echo $product->url_images; 
+        // die();
         return $product->save();
     }
 }

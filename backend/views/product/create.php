@@ -104,7 +104,7 @@ $this->title = 'Додати товар';
                         'initialPreviewConfig' => $image_conf,
             
                         
-                        'maxFileSize'=> 2800,
+                        'maxFileSize'=> 5500,
                         // 'deleteUrl' => Url::to(['/select-data/file-delete-promotion?id=' . $promotion_id]),
                     ]
                 ])->label('Фото товару');
